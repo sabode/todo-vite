@@ -3,5 +3,10 @@ import tailwindcss from "tailwindcss";
 
 export default defineConfig({
   base: '/',
-  plugins: [tailwindcss()]
+  plugins: [tailwindcss()],
+  css: {
+    postcss: {
+      config: "./postcss.config.js"
+    }
+  }
 })
